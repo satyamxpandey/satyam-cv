@@ -32,7 +32,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Action Panel for Browser Preview Only */
+        /* Fixed Browser Action Panel */
         .no-print-panel {
             display: flex;
             justify-content: center;
@@ -77,17 +77,17 @@
             background: #1D4ED8;
         }
 
-        /* Ultra-Premium A4 Container */
+        /* Ultra-Premium A4 Container Setup */
         .resume-page {
             max-width: 842px;
-            margin: 50px auto;
+            margin: 40px auto;
             background: var(--bg-main);
-            padding: 60px 55px;
+            padding: 55px 50px;
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
             position: relative;
         }
 
-        /* Top Executive Header Architecture */
+        /* Executive Header Layout */
         .exec-header {
             display: grid;
             grid-template-columns: 135px 1fr;
@@ -173,14 +173,13 @@
             color: var(--accent);
         }
 
-        /* Classic Two Column Grid */
+        /* Classic Corporate Two-Column Layout Grid */
         .layout-grid {
             display: grid;
             grid-template-columns: 1.95fr 1.05fr;
             gap: 45px;
         }
 
-        /* Pure Corporate Typographic Layout */
         section {
             margin-bottom: 32px;
             page-break-inside: avoid;
@@ -207,13 +206,13 @@
         }
 
         .editorial-summary {
-            font-size: 13.5px;
+            font-size: 13px;
             color: var(--secondary);
             text-align: justify;
             line-height: 1.6;
         }
 
-        /* Corporate Experience Log */
+        /* Experience Component Block styling */
         .node-block {
             margin-bottom: 22px;
         }
@@ -250,6 +249,7 @@
             padding: 2px 8px;
             border: 1px solid var(--border-color);
             border-radius: 2px;
+            white-space: nowrap;
         }
 
         .node-details {
@@ -274,7 +274,7 @@
             font-weight: 700;
         }
 
-        /* Structured Group Containers (Sidebar) */
+        /* Sidebar Elements Styles */
         .catalogue-box {
             margin-bottom: 18px;
             background: var(--bg-light);
@@ -309,7 +309,7 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Metric Rows (Achievements) */
+        /* Metric Highlights Group */
         .metric-row {
             margin-bottom: 12px;
             border-left: 2px solid var(--accent);
@@ -327,7 +327,7 @@
             color: var(--text-muted);
         }
 
-        /* Academic Block */
+        /* Academic Block Elements */
         .academic-node {
             margin-bottom: 12px;
         }
@@ -344,7 +344,7 @@
             color: var(--text-muted);
         }
 
-        /* Language Grid Architecture */
+        /* Language Grid Layout - Clean Fix */
         .matrix-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -369,20 +369,23 @@
             color: var(--text-muted);
         }
 
-        /* Precision Print Style Rules */
+        /* Strict Print Engine Design Calibration matching Preview exactly */
         @media print {
             body {
-                background: #FFFFFF;
-                color: #000000;
+                background: #FFFFFF !important;
+                color: #000000 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             .no-print-panel {
                 display: none !important;
             }
             .resume-page {
-                margin: 0;
-                padding: 0;
-                box-shadow: none;
-                max-width: 100%;
+                margin: 0 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
             }
             section {
                 page-break-inside: avoid;
@@ -417,6 +420,7 @@
 </head>
 <body>
 
+    <!-- Unified Execution Topbar -->
     <div class="no-print-panel">
         <button class="btn btn-primary" onclick="window.print()">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
@@ -429,16 +433,16 @@
     </div>
 
     <div class="resume-page">
-        <!-- Absolute Executive Header Architecture -->
+        <!-- Executive Portfolio Corporate Header Layer -->
         <header class="exec-header">
             <div class="img-frame">
-                <img src="https://i.pinimg.com/736x/d5/c7/fa/d5c7fa4f04bd4b85a412498765883110.jpg" alt="Satyam Pandey Executive Portrait">
+                <img src="https://i.pinimg.com/736x/d5/c7/fa/d5c7fa4f04bd4b85a412498765883110.jpg" alt="Satyam Pandey Profile Photo">
             </div>
             <div class="meta-block">
                 <h1>Satyam Pandey</h1>
                 <div class="title-pipeline">
                     <span>Growth Marketing Specialist</span>
-                    <span>Brand Strategist</span>
+                    <span>Brand & Content Strategist</span>
                     <span>Founder | Ofbuzz Technology</span>
                 </div>
                 <div class="contact-strip">
@@ -458,10 +462,10 @@
             </div>
         </header>
 
-        <!-- Balanced Functional Matrix Grid -->
+        <!-- Main Structured Grid Block Layout -->
         <div class="layout-grid">
             
-            <!-- Left Primary Column -->
+            <!-- Left Primary Track -->
             <div class="left-pane">
                 <section>
                     <div class="section-header">
@@ -469,7 +473,7 @@
                         Executive Profile
                     </div>
                     <p class="editorial-summary">
-                        Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies. Highly specialized in the jewelry e-commerce and luxury sector, combining technical foresight with brand positioning to drive consistent revenue velocity. Expert developer of enterprise automation landscapes and customized software infrastructure that transforms operational output, optimizes market visibility, and drives customer conversion lifecycles across modern business ecosystems.
+                        Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies[cite: 1]. Highly specialized in the luxury jewelry e-commerce sector, combining marketing foresight with end-to-end multimedia production assets to accelerate revenue velocity[cite: 1]. Expert developer of enterprise automation setups, workflows, and tailored CRM systems designed to increase operational output, eliminate production overheads, and streamline complete client retention lifecycles[cite: 1].
                     </p>
                 </section>
 
@@ -479,37 +483,36 @@
                         Professional Experience
                     </div>
 
-                    <!-- Ofbuzz -->
+                    <!-- Ofbuzz Technology -->
                     <div class="node-block">
                         <div class="node-meta">
                             <div>
-                                <div class="node-designation">Founder & Growth Lead</div>
+                                <div class="node-designation">Founder & Growth Director</div>
                                 <div class="node-org">Ofbuzz Technology</div>
                             </div>
                             <div class="node-date">Dec 2021 – Present</div>
                         </div>
                         <ul class="node-details">
-                            <li>Founded and scale an advanced enterprise technology firm deploying customized SaaS suites, workflow automations, AI business applications, and full-scale digital ecosystem integrations for SMEs and luxury jewelry clients.</li>
-                            <li>Designed and successfully commercialized complex software systems including specialized Jewelry CRMs, digital Kitty Management suites, centralized Bulk WhatsApp platforms, and robust corporate custom tools.</li>
-                            <li>Maintain ownership over the absolute product lifecycle, supervising UI/UX design architecture, corporate brand strategy, front-end solution blueprinting, growth strategy, and high-value lead acquisition pipelines.</li>
-                            <li>Direct end-to-end strategic workflows spanning enterprise-tier client communications, portfolio mapping, multi-channel growth systems, and performance analytics execution.</li>
-                            <li>Pioneer industry-specific digital architecture roadmaps, migrating legacy multi-generational jewelry operations into optimized modern digital setups.</li>
+                            <li>Founded and scale an advanced enterprise digital agency deploying custom SaaS tools, complex workflow automations, and scalable performance marketing funnels[cite: 1].</li>
+                            <li>Engineered and commercialized high-impact specialized software applications including customized Jewelry CRMs, digital saving schemes (Kitty Management) suites, and automation hubs[cite: 1].</li>
+                            <li>Govern end-to-end product lifecycles, supervising tactical front-end architectures, UX systems, luxury digital branding aesthetics, and high-value B2B lead acquisition schemes[cite: 1].</li>
+                            <li>Migrate legacy multi-generational retail enterprises into performance-driven online ecosystems, significantly scaling market penetration indices[cite: 1].</li>
                         </ul>
                     </div>
 
-                    <!-- Abhushan Mandir -->
+                    <!-- Abhushan Mandir Jewellers -->
                     <div class="node-block">
                         <div class="node-meta">
                             <div>
-                                <div class="node-designation">Digital Marketing Manager</div>
+                                <div class="node-designation">Digital Marketing & Production Manager</div>
                                 <div class="node-org">Abhushan Mandir Jewellers</div>
                             </div>
                             <div class="node-date">2024 – Present</div>
                         </div>
                         <ul class="node-details">
-                            <li>Directed full-spectrum omnichannel growth operations, upgrading luxury market positioning indices and accelerating cross-platform client interaction rates.</li>
-                            <li>Supervised complex commercial production operations including product photography direction, visual layout assets, and standard creative designs for premium promotional pushes.</li>
-                            <li>Created high-conversion cinematic advertisement videos and structured digital layouts to expand the brand's addressable organic and paid media pipeline.</li>
+                            <li>Orchestrate full-funnel digital growth and premium customer acquisition campaigns, optimizing premium brand equity metrics across social and search ecosystems[cite: 1].</li>
+                            <li>Independently direct and execute full-scale in-house commercial media production, deploying professional mirrorless and dynamic studio rigging systems[cite: 1].</li>
+                            <li>Produce ultra-sharp jewelry catalog imagery and high-retention cinematic digital advertisements, driving brand visibility across organic and performance-based marketing loops[cite: 1].</li>
                         </ul>
                     </div>
 
@@ -523,9 +526,9 @@
                             <div class="node-date">2022 – 2024</div>
                         </div>
                         <ul class="node-details">
-                            <li>Formulated data-driven customer acquisition funnels to extend audience market penetration, digital platform visibility, and overarching brand presence.</li>
-                            <li>Constructed highly engaging brand creatives, dynamic marketing designs, and item imagery catalogs optimized across core digital customer touchpoints.</li>
-                            <li>Produced and edited targeted video media deployments, supporting consistent brand outreach objectives across active marketing loops.</li>
+                            <li>Formulated data-backed consumer acquisition models to accelerate brand interactions, organic positioning, and modern e-commerce footprints[cite: 1].</li>
+                            <li>Crafted high-engaging visual layouts, optimized asset catalogs, and strategic banner creatives tailored for cross-platform advertising touchpoints[cite: 1].</li>
+                            <li>Supervised localized social communication channels and video content deployments, growing consistent audience acquisition channels[cite: 1].</li>
                         </ul>
                     </div>
 
@@ -539,8 +542,8 @@
                             <div class="node-date">2020 – 2022</div>
                         </div>
                         <ul class="node-details">
-                            <li>Regulated inventory verification methodologies and core warehouse records management, maintaining data fidelity across all storage accounts.</li>
-                            <li>Coordinated facility storage optimization plans and transit pathways, increasing item selection speeds and general logistical delivery performance.</li>
+                            <li>Regulated strict asset validation methodologies, inventory data fidelity, and precise stock replenishment reporting structures[cite: 1].</li>
+                            <li>Optimized internal storage blueprints and material sorting configurations, lowering lead packing timeframes and improving logistical outputs[cite: 1].</li>
                         </ul>
                     </div>
 
@@ -554,68 +557,69 @@
                             <div class="node-date">2019 – 2020</div>
                         </div>
                         <ul class="node-details">
-                            <li>Deployed technical print infrastructures and custom driver provisions, diagnosing connectivity problems to protect enterprise support SLAs.</li>
-                            <li>Managed complex e-commerce catalog operations on Amazon, processing real-time inventory adjustments and keeping fulfillment protocols precise.</li>
+                            <li>Diagnosed corporate printing systems, customized hardware interfaces, and network link layers to retain strict operational service SLAs[cite: 1].</li>
+                            <li>Managed complex e-commerce listings on Amazon, adjusting stock sync rules to eliminate processing delays[cite: 1].</li>
                         </ul>
                     </div>
                 </section>
             </div>
 
-            <!-- Right Sidebar Column -->
+            <!-- Right Secondary Sidebar Track -->
             <div class="right-pane">
                 <section>
                     <div class="section-header">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                        Technical Competencies
+                        Professional Skills
                     </div>
                     
                     <div class="catalogue-box">
-                        <div class="catalogue-caption">Marketing & Scaling</div>
+                        <div class="catalogue-caption">Growth & Performance</div>
                         <div class="catalogue-tokens">
                             <span class="token">Performance Marketing</span>
-                            <span class="token">Brand Strategy</span>
-                            <span class="token">SEO Architecture</span>
-                            <span class="token">Social Media Marketing</span>
+                            <span class="token">Brand Architecture</span>
                             <span class="token">Meta Ads Manager</span>
-                            <span class="token">Google Analytics</span>
+                            <span class="token">SEO Frameworks</span>
                             <span class="token">B2B Lead Generation</span>
-                            <span class="token">Market Research</span>
+                            <span class="token">Data Analytics</span>
                         </div>
                     </div>
 
                     <div class="catalogue-box">
-                        <div class="catalogue-caption">Creative & Production</div>
+                        <div class="catalogue-caption">Content & Multimedia</div>
                         <div class="catalogue-tokens">
-                            <span class="token">Graphic Design</span>
-                            <span class="token">Advanced Video Editing</span>
-                            <span class="token">Creative Direction</span>
+                            <span class="token">Commercial Direction</span>
                             <span class="token">Product Photography</span>
+                            <span class="token">Cinematic Video Editing</span>
                             <span class="token">Conversion Copywriting</span>
-                            <span class="token">Campaign Scriptwriting</span>
+                            <span class="token">UI/UX Asset Layout</span>
                         </div>
                     </div>
 
                     <div class="catalogue-box">
-                        <div class="catalogue-caption">Technology & Engineering</div>
+                        <div class="catalogue-caption">Tech & Automations</div>
                         <div class="catalogue-tokens">
-                            <span class="token">AI Tool Automation</span>
-                            <span class="token">Website Development</span>
-                            <span class="token">WordPress Architecture</span>
-                            <span class="token">Shopify Management</span>
-                            <span class="token">CRM Engineering</span>
-                            <span class="token">API Integrations</span>
                             <span class="token">Workflow Automation</span>
+                            <span class="token">Custom CRM Deployment</span>
+                            <span class="token">WordPress Architecture</span>
+                            <span class="token">Shopify Optimization</span>
+                            <span class="token">API Integrations</span>
                         </div>
                     </div>
+                </section>
 
-                    <div class="catalogue-box">
-                        <div class="catalogue-caption">Corporate Leadership</div>
+                <!-- Core Technical Gear Assets Block -->
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                        Owned Production Assets
+                    </div>
+                    <div class="catalogue-box" style="border-left: 2px solid var(--accent); background: #FFF;">
+                        <div class="catalogue-caption" style="color: var(--accent);">Plug-and-Play Studio Kit</div>
                         <div class="catalogue-tokens">
-                            <span class="token">Executive Leadership</span>
-                            <span class="token">Client Acquisition</span>
-                            <span class="token">Business Development</span>
-                            <span class="token">Strategic Negotiation</span>
-                            <span class="token">Project Management</span>
+                            <span class="token" style="font-weight:600;">Sony ZV-E10 Mirrorless Setup</span>
+                            <span class="token">Godox TT520II Pro Flash System</span>
+                            <span class="token">Digitek DSL-25W RGB Stick Light</span>
+                            <span class="token">Dual Camera + Light Stand Rigging</span>
                         </div>
                     </div>
                 </section>
@@ -627,15 +631,15 @@
                     </div>
                     <div class="metric-row">
                         <div class="metric-header">Monetized 20K+ Subscriber Platform</div>
-                        <div class="metric-sub">Content Network Scaling — 2024</div>
+                        <div class="metric-sub">Content Network Scaling — 2024[cite: 1]</div>
                     </div>
                     <div class="metric-row">
-                        <div class="metric-header">Generated 100+ Qualified Leads Monthly</div>
-                        <div class="metric-sub">Lead Systems Hub Ecosystem — 2023</div>
+                        <div class="metric-header">Generated 100+ Leads Monthly</div>
+                        <div class="metric-sub">B2B Custom Lead Pipeline Setup — 2023[cite: 1]</div>
                     </div>
                     <div class="metric-row">
-                        <div class="metric-header">Engineered 1000+ Brand Media Assets</div>
-                        <div class="metric-sub">High-Scale Corporate Creative Architecture — 2025</div>
+                        <div class="metric-header">Eliminated Studio Overhead Costs</div>
+                        <div class="metric-sub">By Deploying Full In-House Gear Kits — 2024</div>
                     </div>
                 </section>
 
@@ -645,20 +649,12 @@
                         Credentials
                     </div>
                     <div class="metric-row">
-                        <div class="metric-header">AI Tools Workshop Integration</div>
-                        <div class="metric-sub">Be10x — 05/2026</div>
-                    </div>
-                    <div class="metric-row">
-                        <div class="metric-header">Marketing With Canva Architecture</div>
-                        <div class="metric-sub">Canva Design School — 11/2025</div>
+                        <div class="metric-header">AI Tool & Workflow Integration</div>
+                        <div class="metric-sub">Be10x Workshop — 05/2026[cite: 1]</div>
                     </div>
                     <div class="metric-row">
                         <div class="metric-header">Google Analytics Certification</div>
-                        <div class="metric-sub">Grow With Google — 02/2025</div>
-                    </div>
-                    <div class="metric-row">
-                        <div class="metric-header">Creative Technology Endorsement</div>
-                        <div class="metric-sub">Cemex Ventures — 11/2022</div>
+                        <div class="metric-sub">Grow With Google Frameworks — 02/2025[cite: 1]</div>
                     </div>
                 </section>
 
@@ -669,11 +665,11 @@
                     </div>
                     <div class="academic-node">
                         <div class="academic-major">Bachelor of Arts</div>
-                        <div class="academic-inst">S.S.V.V University, Varanasi</div>
+                        <div class="academic-inst">S.S.V.V University, Varanasi[cite: 1]</div>
                     </div>
                     <div class="academic-node">
                         <div class="academic-major">High School Diploma</div>
-                        <div class="academic-inst">M.V.V. Gurukul Vidyapeeth</div>
+                        <div class="academic-inst">M.V.V. Gurukul Vidyapeeth[cite: 1]</div>
                     </div>
                 </section>
 
