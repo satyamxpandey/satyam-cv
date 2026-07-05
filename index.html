@@ -28,7 +28,7 @@
             font-family: 'Inter', -apple-system, sans-serif;
             background-color: #F1F5F9;
             color: var(--primary);
-            line-height: 1.5;
+            line-height: 1.4;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -37,7 +37,7 @@
             display: flex;
             justify-content: center;
             gap: 16px;
-            padding: 20px;
+            padding: 15px;
             background: var(--primary);
             position: sticky;
             top: 0;
@@ -49,8 +49,8 @@
             background: var(--bg-main);
             color: var(--primary);
             border: 1px solid var(--border-color);
-            padding: 10px 24px;
-            font-size: 13px;
+            padding: 8px 20px;
+            font-size: 12px;
             font-weight: 600;
             letter-spacing: 0.03em;
             text-transform: uppercase;
@@ -77,38 +77,39 @@
             background: #1D4ED8;
         }
 
-        /* Strict Independent Page Architecture */
+        /* Strict Independent Page Architecture (Single Page) */
         .resume-container {
             max-width: 842px;
             margin: 0 auto;
-            padding: 20px 0;
+            padding: 10px 0;
         }
 
         .resume-page {
             background: var(--bg-main);
             width: 842px;
             height: 1191px; /* Exact Standard A4 Height at 72dpi scaling */
-            margin: 20px auto;
-            padding: 55px 50px;
+            margin: 10px auto;
+            padding: 40px 45px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
             position: relative;
             box-sizing: border-box;
+            overflow: hidden;
         }
 
         /* Executive Header Layout */
         .exec-header {
             display: grid;
-            grid-template-columns: 120px 1fr;
-            gap: 30px;
+            grid-template-columns: 100px 1fr;
+            gap: 25px;
             align-items: center;
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 25px;
-            margin-bottom: 30px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .img-frame {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 2px;
             overflow: hidden;
             border: 1px solid var(--border-color);
@@ -121,29 +122,29 @@
         }
 
         .meta-block h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             letter-spacing: -0.03em;
             color: var(--primary);
             line-height: 1.1;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .title-pipeline {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
             color: var(--accent);
             text-transform: uppercase;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.05em;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 10px;
         }
 
         .title-pipeline span:not(:last-child)::after {
             content: "│";
-            margin-left: 10px;
+            margin-left: 8px;
             color: #CBD5E1;
             font-weight: 400;
         }
@@ -151,23 +152,23 @@
         .contact-strip {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
             border-top: 1px solid var(--border-color);
-            padding-top: 12px;
+            padding-top: 8px;
         }
 
         .contact-strip-item {
             display: flex;
             align-items: center;
-            gap: 6px;
-            font-size: 12.5px;
+            gap: 5px;
+            font-size: 11.5px;
             color: var(--secondary);
             text-decoration: none;
         }
 
         .contact-strip-item svg {
-            width: 14px;
-            height: 14px;
+            width: 13px;
+            height: 13px;
             color: var(--text-muted);
         }
 
@@ -179,74 +180,73 @@
         /* Dual-Column Structural Track Grid */
         .layout-grid {
             display: grid;
-            grid-template-columns: 1.95fr 1.05fr;
-            gap: 40px;
-            height: calc(100% - 20px);
+            grid-template-columns: 1.9fr 1.1fr;
+            gap: 30px;
         }
 
         section {
-            margin-bottom: 25px;
+            margin-bottom: 18px;
         }
 
         .section-header {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--primary);
             border-bottom: 1px solid var(--primary);
-            padding-bottom: 4px;
-            margin-bottom: 15px;
+            padding-bottom: 3px;
+            margin-bottom: 12px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .section-header svg {
-            width: 15px;
-            height: 15px;
+            width: 14px;
+            height: 14px;
             color: var(--primary);
         }
 
         .editorial-summary {
-            font-size: 12.5px;
+            font-size: 11.5px;
             color: var(--secondary);
             text-align: justify;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* Career Timelines */
         .node-block {
-            margin-bottom: 20px;
+            margin-bottom: 14px;
         }
 
         .node-meta {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .node-designation {
-            font-size: 13.5px;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--primary);
         }
 
         .node-org {
-            font-size: 12.5px;
+            font-size: 11.5px;
             font-weight: 600;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.02em;
-            }
+        }
 
         .node-date {
-            font-size: 11.5px;
+            font-size: 10.5px;
             font-weight: 600;
             color: var(--text-muted);
             background: var(--bg-light);
-            padding: 2px 6px;
+            padding: 1px 5px;
             border: 1px solid var(--border-color);
             border-radius: 2px;
             white-space: nowrap;
@@ -257,13 +257,13 @@
         }
 
         .node-details li {
-            font-size: 12px;
+            font-size: 11px;
             color: var(--text-muted);
-            margin-bottom: 5px;
+            margin-bottom: 3px;
             position: relative;
-            padding-left: 14px;
+            padding-left: 12px;
             text-align: justify;
-            line-height: 1.5;
+            line-height: 1.4;
         }
 
         .node-details li::before {
@@ -276,71 +276,72 @@
 
         /* Sidebar Containers */
         .catalogue-box {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             background: var(--bg-light);
-            padding: 12px;
+            padding: 10px;
             border: 1px solid var(--border-color);
             border-radius: 2px;
         }
 
         .catalogue-caption {
-            font-size: 11px;
+            font-size: 10.5px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.06em;
             color: var(--primary);
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             border-bottom: 1px dashed #CBD5E1;
-            padding-bottom: 4px;
+            padding-bottom: 3px;
         }
 
         .catalogue-tokens {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 5px;
         }
 
         .token {
-            font-size: 10.5px;
+            font-size: 10px;
             font-weight: 500;
             background: var(--bg-main);
             color: var(--primary);
-            padding: 2px 6px;
+            padding: 1px 5px;
             border: 1px solid var(--border-color);
         }
 
         /* Metric Architecture Rows */
         .metric-row {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             border-left: 2px solid var(--accent);
-            padding-left: 10px;
+            padding-left: 8px;
         }
 
         .metric-header {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
             color: var(--primary);
+            line-height: 1.3;
         }
 
         .metric-sub {
-            font-size: 11px;
+            font-size: 10px;
             color: var(--text-muted);
         }
 
         /* Education Layout elements */
         .academic-node {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .academic-major {
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
         }
 
         .academic-inst {
-            font-size: 11px;
+            font-size: 10px;
             color: var(--text-muted);
         }
 
@@ -352,11 +353,11 @@
         }
 
         .matrix-cell {
-            font-size: 11.5px;
+            font-size: 11px;
             color: var(--primary);
             font-weight: 600;
             background: var(--bg-light);
-            padding: 6px 10px;
+            padding: 5px 8px;
             border: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
@@ -364,7 +365,7 @@
         }
 
         .matrix-cell span {
-            font-size: 10.5px;
+            font-size: 10px;
             font-weight: 400;
             color: var(--text-muted);
         }
@@ -394,14 +395,10 @@
 
             .resume-page {
                 margin: 0mm 0mm 0mm 0mm !important;
-                padding: 20mm 18mm !important;
+                padding: 15mm 15mm !important;
                 box-shadow: none !important;
                 width: 210mm !important;
                 height: 297mm !important;
-                page-break-after: always !important;
-            }
-            
-            .resume-page:last-child {
                 page-break-after: avoid !important;
             }
         }
@@ -423,7 +420,6 @@
 
     <div class="resume-container">
         
-        <!-- ================= PAGE 1 BLOCK ================= -->
         <div class="resume-page">
             <header class="exec-header">
                 <div class="img-frame">
@@ -461,7 +457,7 @@
                             Executive Profile
                         </div>
                         <p class="editorial-summary">
-                            Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies. Highly specialized in the luxury jewelry e-commerce sector, combining marketing foresight with end-to-end multimedia production assets to accelerate revenue velocity. Expert developer of enterprise automation setups, workflows, and tailored CRM systems designed to increase operational output, eliminate production overheads, and streamline complete client retention lifecycles.
+                            Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of capability engineering scalable consumer-acquisition frameworks. Highly specialized in the luxury jewelry e-commerce sector, combining marketing foresight with end-to-end multimedia production assets. Expert developer of enterprise automation setups, workflows, and tailored CRM systems designed to increase operational output, eliminate production overheads, and streamline complete client retention lifecycles.
                         </p>
                     </section>
 
@@ -480,10 +476,9 @@
                                 <div class="node-date">Dec 2021 – Present</div>
                             </div>
                             <ul class="node-details">
-                                <li>Founded and scale an advanced enterprise digital agency deploying custom SaaS tools, complex workflow automations, and scalable performance marketing funnels.</li>
-                                <li>Engineered and commercialized high-impact specialized software applications including customized Jewelry CRMs, digital saving schemes (Kitty Management) suites, and automation hubs.</li>
-                                <li>Govern end-to-end product lifecycles, supervising tactical front-end architectures, UX systems, luxury digital branding aesthetics, and high-value B2B lead acquisition schemes.</li>
-                                <li>Migrate legacy multi-generational retail enterprises into performance-driven online ecosystems, significantly scaling market penetration indices.</li>
+                                <li>Founded and scale an enterprise digital agency deploying custom SaaS tools, workflow automations, and performance marketing funnels.</li>
+                                <li>Engineered specialized software applications including customized Jewelry CRMs, digital saving schemes (Kitty Management) suites, and automation hubs.</li>
+                                <li>Govern front-end architectures, UX systems, luxury digital branding aesthetics, and high-value B2B lead acquisition schemes.</li>
                             </ul>
                         </div>
 
@@ -496,9 +491,36 @@
                                 <div class="node-date">2024 – Present</div>
                             </div>
                             <ul class="node-details">
-                                <li>Orchestrate full-funnel digital growth and premium customer acquisition campaigns, optimizing premium brand equity metrics across social and search ecosystems.</li>
-                                <li>Independently direct and execute full-scale in-house commercial media production, deploying professional mirrorless and dynamic studio rigging systems.</li>
-                                <li>Produce ultra-sharp jewelry catalog imagery and high-retention cinematic digital advertisements, driving brand visibility across organic and performance-based marketing loops.</li>
+                                <li>Orchestrate full-funnel digital growth and premium customer acquisition campaigns across social and search ecosystems.</li>
+                                <li>Direct full-scale in-house commercial media production deploying professional mirrorless setups and dynamic studio rigging.</li>
+                                <li>Produce high-retention cinematic digital advertisements and sharp jewelry catalog imagery to drive performance loops.</li>
+                            </ul>
+                        </div>
+
+                        <div class="node-block">
+                            <div class="node-meta">
+                                <div>
+                                    <div class="node-designation">Digital Marketing Manager</div>
+                                    <div class="node-org">Vachya Jewels</div>
+                                </div>
+                                <div class="node-date">2022 – 2024</div>
+                            </div>
+                            <ul class="node-details">
+                                <li>Formulated data-backed consumer acquisition models to accelerate brand interactions and digital footprints.</li>
+                                <li>Crafted high-engaging visual layouts, optimized asset catalogs, and cross-platform advertising creatives.</li>
+                            </ul>
+                        </div>
+
+                        <div class="node-block" style="margin-bottom: 0;">
+                            <div class="node-meta">
+                                <div>
+                                    <div class="node-designation">Warehouse & Tech Specialist (Previous Roles)</div>
+                                    <div class="node-org">Kharidari Supermart / Everycom</div>
+                                </div>
+                                <div class="node-date">2019 – 2022</div>
+                            </div>
+                            <ul class="node-details">
+                                <li>Regulated strict asset validation methodologies, e-commerce listings on Amazon, and stock synchronization rules to eliminate delivery delays.</li>
                             </ul>
                         </div>
                     </section>
@@ -515,10 +537,9 @@
                             <div class="catalogue-caption">Growth & Performance</div>
                             <div class="catalogue-tokens">
                                 <span class="token">Performance Marketing</span>
-                                <span class="token">Brand Architecture</span>
                                 <span class="token">Meta Ads Manager</span>
                                 <span class="token">SEO Frameworks</span>
-                                <span class="token">B2B Lead Generation</span>
+                                <span class="token">B2B Lead Gen</span>
                             </div>
                         </div>
 
@@ -528,7 +549,6 @@
                                 <span class="token">Commercial Direction</span>
                                 <span class="token">Product Photography</span>
                                 <span class="token">Cinematic Video Editing</span>
-                                <span class="token">Conversion Copywriting</span>
                             </div>
                         </div>
 
@@ -537,8 +557,7 @@
                             <div class="catalogue-tokens">
                                 <span class="token">Workflow Automation</span>
                                 <span class="token">Custom CRM Deployment</span>
-                                <span class="token">WordPress Architecture</span>
-                                <span class="token">Shopify Optimization</span>
+                                <span class="token">WordPress & Shopify</span>
                             </div>
                         </div>
                     </section>
@@ -548,7 +567,7 @@
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
                             Owned Production Assets
                         </div>
-                        <div class="catalogue-box" style="border-left: 2px solid var(--accent); background: #FFF;">
+                        <div class="catalogue-box" style="border-left: 2px solid var(--accent); background: #FFF; margin-bottom: 0;">
                             <div class="catalogue-caption" style="color: var(--accent);">Plug-and-Play Studio Kit</div>
                             <div class="catalogue-tokens">
                                 <span class="token" style="font-weight:600;">Sony ZV-E10 Mirrorless Setup</span>
@@ -558,88 +577,25 @@
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
-        </div>
 
-        <!-- ================= PAGE 2 BLOCK ================= -->
-        <div class="resume-page">
-            <div class="layout-grid">
-                <div class="left-pane">
-                    <section>
-                        <div class="section-header">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                            Experience (Continued)
-                        </div>
-
-                        <div class="node-block">
-                            <div class="node-meta">
-                                <div>
-                                    <div class="node-designation">Digital Marketing Manager</div>
-                                    <div class="node-org">Vachya Jewels</div>
-                                </div>
-                                <div class="node-date">2022 – 2024</div>
-                            </div>
-                            <ul class="node-details">
-                                <li>Formulated data-backed consumer acquisition models to accelerate brand interactions, organic positioning, and modern e-commerce footprints.</li>
-                                <li>Crafted high-engaging visual layouts, optimized asset catalogs, and strategic banner creatives tailored for cross-platform advertising touchpoints.</li>
-                                <li>Supervised localized social communication channels and video content deployments, growing consistent audience acquisition channels.</li>
-                            </ul>
-                        </div>
-
-                        <div class="node-block">
-                            <div class="node-meta">
-                                <div>
-                                    <div class="node-designation">Warehouse Executive</div>
-                                    <div class="node-org">Kharidari Supermart</div>
-                                </div>
-                                <div class="node-date">2020 – 2022</div>
-                            </div>
-                            <ul class="node-details">
-                                <li>Regulated strict asset validation methodologies, inventory data fidelity, and precise stock replenishment reporting structures.</li>
-                                <li>Optimized internal storage blueprints and material sorting configurations, lowering lead packing timeframes and improving logistical outputs.</li>
-                            </ul>
-                        </div>
-
-                        <div class="node-block">
-                            <div class="node-meta">
-                                <div>
-                                    <div class="node-designation">Technical Support Executive</div>
-                                    <div class="node-org">Everycom Electronics</div>
-                                </div>
-                                <div class="node-date">2019 – 2020</div>
-                            </div>
-                            <ul class="node-details">
-                                <li>Diagnosed corporate printing systems, customized hardware interfaces, and network link layers to retain strict operational service SLAs.</li>
-                                <li>Managed complex e-commerce listings on Amazon, adjusting stock sync rules to eliminate processing delays.</li>
-                            </ul>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="right-pane">
                     <section>
                         <div class="section-header">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             Measurable Impact
                         </div>
                         <div class="metric-row">
-                            <div class="metric-header">Monetized 20K+ Subscriber Platform</div>
-                            <div class="metric-sub">Content Network Scaling — 2024</div>
+                            <div class="metric-header">Monetized 20K+ Sub Platform</div>
+                            <div class="metric-sub">Content Network Scaling</div>
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Generated 100+ Leads Monthly</div>
-                            <div class="metric-sub">B2B Custom Lead Pipeline Setup — 2023</div>
-                        </div>
-                        <div class="metric-row">
-                            <div class="metric-header">Eliminated Studio Overhead Costs</div>
-                            <div class="metric-sub">By Deploying Full In-House Gear Kits — 2024</div>
+                            <div class="metric-sub">B2B Custom Lead Pipeline Setup</div>
                         </div>
                     </section>
 
                     <section>
                         <div class="section-header">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                             Credentials
                         </div>
                         <div class="metric-row">
@@ -648,11 +604,11 @@
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Canva Pro Design Expert</div>
-                            <div class="metric-sub">Visual Communication Frameworks — 2025</div>
+                            <div class="metric-sub">Visual Frameworks — 2025</div>
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Google Analytics Certification</div>
-                            <div class="metric-sub">Grow With Google Frameworks — 02/2025</div>
+                            <div class="metric-sub">Grow With Google Frameworks — 2025</div>
                         </div>
                     </section>
 
@@ -665,13 +621,13 @@
                             <div class="academic-major">Bachelor of Arts</div>
                             <div class="academic-inst">S.S.V.V University, Varanasi</div>
                         </div>
-                        <div class="academic-node">
+                        <div class="academic-node" style="margin-bottom: 0;">
                             <div class="academic-major">High School Diploma</div>
                             <div class="academic-inst">M.V.V. Gurukul Vidyapeeth</div>
                         </div>
                     </section>
 
-                    <section>
+                    <section style="margin-bottom: 0;">
                         <div class="section-header">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.65 0 3-4.03 3-9s-1.35-9-3-9m0 18c-1.65 0-3-4.03-3-9s1.35-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
                             Languages
