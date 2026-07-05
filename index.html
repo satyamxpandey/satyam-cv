@@ -181,7 +181,7 @@
             display: grid;
             grid-template-columns: 1.95fr 1.05fr;
             gap: 40px;
-            height: calc(100% - 20px); /* Fill space accurately without overflow */
+            height: calc(100% - 20px);
         }
 
         section {
@@ -369,11 +369,11 @@
             color: var(--text-muted);
         }
 
-        /* 100% Calibrated Precision Print Engine Overrides */
+        /* Print Override Logic */
         @media print {
             @page {
                 size: A4;
-                margin: 0mm; /* Forces elimination of system dates, titles and URLs completely */
+                margin: 0mm;
             }
             
             body {
@@ -393,12 +393,12 @@
             }
 
             .resume-page {
-                margin: 0mm 0mm 0mm 0mm !important; /* Total removal of external margins */
-                padding: 20mm 18mm !important; /* Perfect standard executive inner block padding */
+                margin: 0mm 0mm 0mm 0mm !important;
+                padding: 20mm 18mm !important;
                 box-shadow: none !important;
-                width: 210mm !important;  /* Physical A4 dimensions match */
-                height: 297mm !important; 
-                page-break-after: always !important; /* Enforces clean systemic segmentation */
+                width: 210mm !important;
+                height: 297mm !important;
+                page-break-after: always !important;
             }
             
             .resume-page:last-child {
@@ -409,7 +409,7 @@
 </head>
 <body>
 
-    <!-- Native Download Anchor Panel UI -->
+    <!-- Download Control Top Panel -->
     <div class="no-print-panel">
         <button class="btn btn-primary" onclick="window.print()">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
@@ -425,7 +425,6 @@
         
         <!-- ================= PAGE 1 BLOCK ================= -->
         <div class="resume-page">
-            <!-- Header Layer Structure inside Page 1 -->
             <header class="exec-header">
                 <div class="img-frame">
                     <img src="https://i.pinimg.com/736x/d5/c7/fa/d5c7fa4f04bd4b85a412498765883110.jpg" alt="Satyam Pandey Profile Photo">
@@ -455,7 +454,6 @@
             </header>
 
             <div class="layout-grid">
-                <!-- Left Track Area -->
                 <div class="left-pane">
                     <section>
                         <div class="section-header">
@@ -463,7 +461,7 @@
                             Executive Profile
                         </div>
                         <p class="editorial-summary">
-                            Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies[cite: 1]. Highly specialized in the luxury jewelry e-commerce sector, combining marketing foresight with end-to-end multimedia production assets to accelerate revenue velocity[cite: 1]. Expert developer of enterprise automation setups, workflows, and tailored CRM systems designed to increase operational output, eliminate production overheads, and streamline complete client retention lifecycles[cite: 1].
+                            Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies. Highly specialized in the luxury jewelry e-commerce sector, combining marketing foresight with end-to-end multimedia production assets to accelerate revenue velocity. Expert developer of enterprise automation setups, workflows, and tailored CRM systems designed to increase operational output, eliminate production overheads, and streamline complete client retention lifecycles.
                         </p>
                     </section>
 
@@ -473,7 +471,6 @@
                             Professional Experience
                         </div>
 
-                        <!-- Ofbuzz Technology -->
                         <div class="node-block">
                             <div class="node-meta">
                                 <div>
@@ -483,14 +480,13 @@
                                 <div class="node-date">Dec 2021 – Present</div>
                             </div>
                             <ul class="node-details">
-                                <li>Founded and scale an advanced enterprise digital agency deploying custom SaaS tools, complex workflow automations, and scalable performance marketing funnels[cite: 1].</li>
-                                <li>Engineered and commercialized high-impact specialized software applications including customized Jewelry CRMs, digital saving schemes (Kitty Management) suites, and automation hubs[cite: 1].</li>
-                                <li>Govern end-to-end product lifecycles, supervising tactical front-end architectures, UX systems, luxury digital branding aesthetics, and high-value B2B lead acquisition schemes[cite: 1].</li>
-                                <li>Migrate legacy multi-generational retail enterprises into performance-driven online ecosystems, significantly scaling market penetration indices[cite: 1].</li>
+                                <li>Founded and scale an advanced enterprise digital agency deploying custom SaaS tools, complex workflow automations, and scalable performance marketing funnels.</li>
+                                <li>Engineered and commercialized high-impact specialized software applications including customized Jewelry CRMs, digital saving schemes (Kitty Management) suites, and automation hubs.</li>
+                                <li>Govern end-to-end product lifecycles, supervising tactical front-end architectures, UX systems, luxury digital branding aesthetics, and high-value B2B lead acquisition schemes.</li>
+                                <li>Migrate legacy multi-generational retail enterprises into performance-driven online ecosystems, significantly scaling market penetration indices.</li>
                             </ul>
                         </div>
 
-                        <!-- Abhushan Mandir Jewellers -->
                         <div class="node-block">
                             <div class="node-meta">
                                 <div>
@@ -500,15 +496,14 @@
                                 <div class="node-date">2024 – Present</div>
                             </div>
                             <ul class="node-details">
-                                <li>Orchestrate full-funnel digital growth and premium customer acquisition campaigns, optimizing premium brand equity metrics across social and search ecosystems[cite: 1].</li>
-                                <li>Independently direct and execute full-scale in-house commercial media production, deploying professional mirrorless and dynamic studio rigging systems[cite: 1].</li>
-                                <li>Produce ultra-sharp jewelry catalog imagery and high-retention cinematic digital advertisements, driving brand visibility across organic and performance-based marketing loops[cite: 1].</li>
+                                <li>Orchestrate full-funnel digital growth and premium customer acquisition campaigns, optimizing premium brand equity metrics across social and search ecosystems.</li>
+                                <li>Independently direct and execute full-scale in-house commercial media production, deploying professional mirrorless and dynamic studio rigging systems.</li>
+                                <li>Produce ultra-sharp jewelry catalog imagery and high-retention cinematic digital advertisements, driving brand visibility across organic and performance-based marketing loops.</li>
                             </ul>
                         </div>
                     </section>
                 </div>
 
-                <!-- Right Track Sidebar Area -->
                 <div class="right-pane">
                     <section>
                         <div class="section-header">
@@ -570,7 +565,6 @@
         <!-- ================= PAGE 2 BLOCK ================= -->
         <div class="resume-page">
             <div class="layout-grid">
-                <!-- Left Track Area (Continued) -->
                 <div class="left-pane">
                     <section>
                         <div class="section-header">
@@ -578,7 +572,6 @@
                             Experience (Continued)
                         </div>
 
-                        <!-- Vachya Jewels -->
                         <div class="node-block">
                             <div class="node-meta">
                                 <div>
@@ -588,13 +581,12 @@
                                 <div class="node-date">2022 – 2024</div>
                             </div>
                             <ul class="node-details">
-                                <li>Formulated data-backed consumer acquisition models to accelerate brand interactions, organic positioning, and modern e-commerce footprints[cite: 1].</li>
-                                <li>Crafted high-engaging visual layouts, optimized asset catalogs, and strategic banner creatives tailored for cross-platform advertising touchpoints[cite: 1].</li>
-                                <li>Supervised localized social communication channels and video content deployments, growing consistent audience acquisition channels[cite: 1].</li>
+                                <li>Formulated data-backed consumer acquisition models to accelerate brand interactions, organic positioning, and modern e-commerce footprints.</li>
+                                <li>Crafted high-engaging visual layouts, optimized asset catalogs, and strategic banner creatives tailored for cross-platform advertising touchpoints.</li>
+                                <li>Supervised localized social communication channels and video content deployments, growing consistent audience acquisition channels.</li>
                             </ul>
                         </div>
 
-                        <!-- Kharidari Supermart -->
                         <div class="node-block">
                             <div class="node-meta">
                                 <div>
@@ -604,12 +596,11 @@
                                 <div class="node-date">2020 – 2022</div>
                             </div>
                             <ul class="node-details">
-                                <li>Regulated strict asset validation methodologies, inventory data fidelity, and precise stock replenishment reporting structures[cite: 1].</li>
-                                <li>Optimized internal storage blueprints and material sorting configurations, lowering lead packing timeframes and improving logistical outputs[cite: 1].</li>
+                                <li>Regulated strict asset validation methodologies, inventory data fidelity, and precise stock replenishment reporting structures.</li>
+                                <li>Optimized internal storage blueprints and material sorting configurations, lowering lead packing timeframes and improving logistical outputs.</li>
                             </ul>
                         </div>
 
-                        <!-- Everycom Electronics -->
                         <div class="node-block">
                             <div class="node-meta">
                                 <div>
@@ -619,14 +610,13 @@
                                 <div class="node-date">2019 – 2020</div>
                             </div>
                             <ul class="node-details">
-                                <li>Diagnosed corporate printing systems, customized hardware interfaces, and network link layers to retain strict operational service SLAs[cite: 1].</li>
-                                <li>Managed complex e-commerce listings on Amazon, adjusting stock sync rules to eliminate processing delays[cite: 1].</li>
+                                <li>Diagnosed corporate printing systems, customized hardware interfaces, and network link layers to retain strict operational service SLAs.</li>
+                                <li>Managed complex e-commerce listings on Amazon, adjusting stock sync rules to eliminate processing delays.</li>
                             </ul>
                         </div>
                     </section>
                 </div>
 
-                <!-- Right Track Sidebar Area (Continued) -->
                 <div class="right-pane">
                     <section>
                         <div class="section-header">
@@ -635,11 +625,11 @@
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Monetized 20K+ Subscriber Platform</div>
-                            <div class="metric-sub">Content Network Scaling — 2024[cite: 1]</div>
+                            <div class="metric-sub">Content Network Scaling — 2024</div>
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Generated 100+ Leads Monthly</div>
-                            <div class="metric-sub">B2B Custom Lead Pipeline Setup — 2023[cite: 1]</div>
+                            <div class="metric-sub">B2B Custom Lead Pipeline Setup — 2023</div>
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Eliminated Studio Overhead Costs</div>
@@ -654,11 +644,11 @@
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">AI Tool & Workflow Integration</div>
-                            <div class="metric-sub">Be10x Workshop — 05/2026[cite: 1]</div>
+                            <div class="metric-sub">Be10x Workshop — 05/2026</div>
                         </div>
                         <div class="metric-row">
                             <div class="metric-header">Google Analytics Certification</div>
-                            <div class="metric-sub">Grow With Google Frameworks — 02/2025[cite: 1]</div>
+                            <div class="metric-sub">Grow With Google Frameworks — 02/2025</div>
                         </div>
                     </section>
 
@@ -669,11 +659,11 @@
                         </div>
                         <div class="academic-node">
                             <div class="academic-major">Bachelor of Arts</div>
-                            <div class="academic-inst">S.S.V.V University, Varanasi[cite: 1]</div>
+                            <div class="academic-inst">S.S.V.V University, Varanasi</div>
                         </div>
                         <div class="academic-node">
                             <div class="academic-major">High School Diploma</div>
-                            <div class="academic-inst">M.V.V. Gurukul Vidyapeeth[cite: 1]</div>
+                            <div class="academic-inst">M.V.V. Gurukul Vidyapeeth</div>
                         </div>
                     </section>
 
