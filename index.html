@@ -77,12 +77,12 @@
             background: #1D4ED8;
         }
 
-        /* Ultra-Premium A4 Container Setup */
+        /* Strict Two-Page Layout Setup */
         .resume-page {
             max-width: 842px;
             margin: 40px auto;
             background: var(--bg-main);
-            padding: 55px 50px;
+            padding: 50px;
             box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
             position: relative;
         }
@@ -90,21 +90,20 @@
         /* Executive Header Layout */
         .exec-header {
             display: grid;
-            grid-template-columns: 135px 1fr;
-            gap: 40px;
+            grid-template-columns: 120px 1fr;
+            gap: 30px;
             align-items: center;
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 35px;
-            margin-bottom: 35px;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .img-frame {
-            width: 135px;
-            height: 135px;
+            width: 120px;
+            height: 120px;
             border-radius: 2px;
             overflow: hidden;
             border: 1px solid var(--border-color);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
         }
 
         .img-frame img {
@@ -114,16 +113,16 @@
         }
 
         .meta-block h1 {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: 700;
             letter-spacing: -0.03em;
             color: var(--primary);
             line-height: 1.1;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .title-pipeline {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             color: var(--accent);
             text-transform: uppercase;
@@ -131,7 +130,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .title-pipeline span:not(:last-child)::after {
@@ -144,23 +143,23 @@
         .contact-strip {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 20px;
             border-top: 1px solid var(--border-color);
-            padding-top: 16px;
+            padding-top: 12px;
         }
 
         .contact-strip-item {
             display: flex;
             align-items: center;
-            gap: 8px;
-            font-size: 13px;
+            gap: 6px;
+            font-size: 12.5px;
             color: var(--secondary);
             text-decoration: none;
         }
 
         .contact-strip-item svg {
-            width: 15px;
-            height: 15px;
+            width: 14px;
+            height: 14px;
             color: var(--text-muted);
         }
 
@@ -169,72 +168,70 @@
             text-decoration: none;
         }
 
-        .contact-strip-item a:hover {
-            color: var(--accent);
-        }
-
-        /* Classic Corporate Two-Column Layout Grid */
+        /* Two-Column Layout Grid */
         .layout-grid {
             display: grid;
             grid-template-columns: 1.95fr 1.05fr;
-            gap: 45px;
+            gap: 40px;
         }
 
         section {
-            margin-bottom: 32px;
-            page-break-inside: avoid;
+            margin-bottom: 28px;
+        }
+
+        .page-break-section {
+            page-break-before: always;
+            padding-top: 20px;
         }
 
         .section-header {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--primary);
             border-bottom: 1px solid var(--primary);
-            padding-bottom: 5px;
-            margin-bottom: 18px;
+            padding-bottom: 4px;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
         .section-header svg {
-            width: 16px;
-            height: 16px;
+            width: 15px;
+            height: 15px;
             color: var(--primary);
         }
 
         .editorial-summary {
-            font-size: 13px;
+            font-size: 12.5px;
             color: var(--secondary);
             text-align: justify;
             line-height: 1.6;
         }
 
-        /* Experience Component Block styling */
+        /* Experience Blocks */
         .node-block {
-            margin-bottom: 22px;
-        }
-        .node-block:last-child {
-            margin-bottom: 0;
+            margin-bottom: 20px;
+            page-break-inside: avoid;
         }
 
         .node-meta {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .node-designation {
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 700;
             color: var(--primary);
         }
 
         .node-org {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 600;
             color: var(--accent);
             text-transform: uppercase;
@@ -242,11 +239,11 @@
         }
 
         .node-date {
-            font-size: 12px;
+            font-size: 11.5px;
             font-weight: 600;
             color: var(--text-muted);
             background: var(--bg-light);
-            padding: 2px 8px;
+            padding: 2px 6px;
             border: 1px solid var(--border-color);
             border-radius: 2px;
             white-space: nowrap;
@@ -257,9 +254,9 @@
         }
 
         .node-details li {
-            font-size: 12.5px;
+            font-size: 12px;
             color: var(--text-muted);
-            margin-bottom: 6px;
+            margin-bottom: 5px;
             position: relative;
             padding-left: 14px;
             text-align: justify;
@@ -274,13 +271,14 @@
             font-weight: 700;
         }
 
-        /* Sidebar Elements Styles */
+        /* Sidebar Containers */
         .catalogue-box {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
             background: var(--bg-light);
-            padding: 14px;
+            padding: 12px;
             border: 1px solid var(--border-color);
             border-radius: 2px;
+            page-break-inside: avoid;
         }
 
         .catalogue-caption {
@@ -289,7 +287,7 @@
             text-transform: uppercase;
             letter-spacing: 0.06em;
             color: var(--primary);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             border-bottom: 1px dashed #CBD5E1;
             padding-bottom: 4px;
         }
@@ -301,62 +299,64 @@
         }
 
         .token {
-            font-size: 11px;
+            font-size: 10.5px;
             font-weight: 500;
             background: var(--bg-main);
             color: var(--primary);
-            padding: 3px 8px;
+            padding: 2px 6px;
             border: 1px solid var(--border-color);
         }
 
-        /* Metric Highlights Group */
+        /* Metrics */
         .metric-row {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             border-left: 2px solid var(--accent);
             padding-left: 10px;
+            page-break-inside: avoid;
         }
 
         .metric-header {
-            font-size: 12.5px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--primary);
         }
 
         .metric-sub {
-            font-size: 11.5px;
+            font-size: 11px;
             color: var(--text-muted);
         }
 
-        /* Academic Block Elements */
+        /* Education */
         .academic-node {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
         }
 
         .academic-major {
-            font-size: 12.5px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--primary);
             text-transform: uppercase;
         }
 
         .academic-inst {
-            font-size: 11.5px;
+            font-size: 11px;
             color: var(--text-muted);
         }
 
-        /* Language Grid Layout - Clean Fix */
+        /* Languages Matrix */
         .matrix-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+            gap: 6px;
         }
 
         .matrix-cell {
-            font-size: 12px;
+            font-size: 11.5px;
             color: var(--primary);
             font-weight: 600;
             background: var(--bg-light);
-            padding: 8px 14px;
+            padding: 6px 10px;
             border: 1px solid var(--border-color);
             display: flex;
             justify-content: space-between;
@@ -364,63 +364,42 @@
         }
 
         .matrix-cell span {
-            font-size: 11px;
+            font-size: 10.5px;
             font-weight: 400;
             color: var(--text-muted);
         }
 
-        /* Strict Print Engine Design Calibration matching Preview exactly */
+        /* Absolute Print Engine Configuration */
         @media print {
+            @page {
+                size: A4;
+                margin: 0mm; /* Removes Browser Headers and Footers completely */
+            }
+            
             body {
                 background: #FFFFFF !important;
                 color: #000000 !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
+
             .no-print-panel {
                 display: none !important;
             }
+
             .resume-page {
-                margin: 0 !important;
-                padding: 0 !important;
+                margin: 0mm !important;
+                padding: 15mm 15mm !important; /* Perfect Margins across pages */
                 box-shadow: none !important;
                 max-width: 100% !important;
                 width: 100% !important;
-            }
-            section {
-                page-break-inside: avoid;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .resume-page {
-                padding: 30px 20px;
-                margin: 10px;
-            }
-            .exec-header {
-                grid-template-columns: 1fr;
-                gap: 20px;
-                text-align: center;
-            }
-            .img-frame {
-                margin: 0 auto;
-            }
-            .title-pipeline {
-                justify-content: center;
-            }
-            .contact-strip {
-                justify-content: center;
-            }
-            .layout-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Unified Execution Topbar -->
+    <!-- Top Navigation Sync Control -->
     <div class="no-print-panel">
         <button class="btn btn-primary" onclick="window.print()">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
@@ -428,12 +407,12 @@
         </button>
         <button class="btn" onclick="window.print()">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-            Print
+            Print Preview
         </button>
     </div>
 
     <div class="resume-page">
-        <!-- Executive Portfolio Corporate Header Layer -->
+        <!-- Header Section -->
         <header class="exec-header">
             <div class="img-frame">
                 <img src="https://i.pinimg.com/736x/d5/c7/fa/d5c7fa4f04bd4b85a412498765883110.jpg" alt="Satyam Pandey Profile Photo">
@@ -462,10 +441,10 @@
             </div>
         </header>
 
-        <!-- Main Structured Grid Block Layout -->
+        <!-- Twin Segment Columns Grid -->
         <div class="layout-grid">
             
-            <!-- Left Primary Track -->
+            <!-- Left Layout Side Content -->
             <div class="left-pane">
                 <section>
                     <div class="section-header">
@@ -531,8 +510,10 @@
                             <li>Supervised localized social communication channels and video content deployments, growing consistent audience acquisition channels[cite: 1].</li>
                         </ul>
                     </div>
+                </section>
 
-                    <!-- Kharidari Supermart -->
+                <!-- Page Break Optimization to start precisely on Page 2 -->
+                <section class="page-break-section">
                     <div class="node-block">
                         <div class="node-meta">
                             <div>
@@ -547,7 +528,6 @@
                         </ul>
                     </div>
 
-                    <!-- Everycom Electronics -->
                     <div class="node-block">
                         <div class="node-meta">
                             <div>
@@ -564,7 +544,7 @@
                 </section>
             </div>
 
-            <!-- Right Secondary Sidebar Track -->
+            <!-- Right Layout Side Context Sidebar -->
             <div class="right-pane">
                 <section>
                     <div class="section-header">
@@ -580,7 +560,6 @@
                             <span class="token">Meta Ads Manager</span>
                             <span class="token">SEO Frameworks</span>
                             <span class="token">B2B Lead Generation</span>
-                            <span class="token">Data Analytics</span>
                         </div>
                     </div>
 
@@ -591,7 +570,6 @@
                             <span class="token">Product Photography</span>
                             <span class="token">Cinematic Video Editing</span>
                             <span class="token">Conversion Copywriting</span>
-                            <span class="token">UI/UX Asset Layout</span>
                         </div>
                     </div>
 
@@ -602,12 +580,10 @@
                             <span class="token">Custom CRM Deployment</span>
                             <span class="token">WordPress Architecture</span>
                             <span class="token">Shopify Optimization</span>
-                            <span class="token">API Integrations</span>
                         </div>
                     </div>
                 </section>
 
-                <!-- Core Technical Gear Assets Block -->
                 <section>
                     <div class="section-header">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
@@ -681,7 +657,6 @@
                     <div class="matrix-grid">
                         <div class="matrix-cell">Hindi <span>Native</span></div>
                         <div class="matrix-cell">English <span>Fluent</span></div>
-                        <div class="matrix-cell">Sanskrit <span>Advanced</span></div>
                     </div>
                 </section>
             </div>
