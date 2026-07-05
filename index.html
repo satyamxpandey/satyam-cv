@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Pandey — Executive Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #111827;
+            --secondary: #374151;
+            --accent: #2563EB;
+            --bg-main: #FFFFFF;
+            --bg-light: #F8FAFC;
+            --border-color: #E5E7EB;
+            --text-muted: #4B5563;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: #F1F5F9;
+            color: var(--primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Action Panel for Browser Preview Only */
+        .no-print-panel {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            padding: 20px;
+            background: var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn {
+            background: var(--bg-main);
+            color: var(--primary);
+            border: 1px solid var(--border-color);
+            padding: 10px 24px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn:hover {
+            background: var(--bg-light);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #FFFFFF;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #1D4ED8;
+        }
+
+        /* Ultra-Premium A4 Container */
+        .resume-page {
+            max-width: 842px;
+            margin: 50px auto;
+            background: var(--bg-main);
+            padding: 60px 55px;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        /* Top Executive Header Architecture */
+        .exec-header {
+            display: grid;
+            grid-template-columns: 135px 1fr;
+            gap: 40px;
+            align-items: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 35px;
+            margin-bottom: 35px;
+        }
+
+        .img-frame {
+            width: 135px;
+            height: 135px;
+            border-radius: 2px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .meta-block h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        .title-pipeline {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .title-pipeline span:not(:last-child)::after {
+            content: "│";
+            margin-left: 10px;
+            color: #CBD5E1;
+            font-weight: 400;
+        }
+
+        .contact-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+        }
+
+        .contact-strip-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .contact-strip-item svg {
+            width: 15px;
+            height: 15px;
+            color: var(--icons);
+        }
+
+        .contact-strip-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-strip-item a:hover {
+            color: var(--accent);
+        }
+
+        /* Classic Two Column Grid */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1.95fr 1.05fr;
+            gap: 45px;
+        }
+
+        /* Pure Corporate Typographic Layout */
+        section {
+            margin-bottom: 32px;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 5px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-header svg {
+            width: 16px;
+            height: 16px;
+            color: var(--primary);
+        }
+
+        .editorial-summary {
+            font-size: 13.5px;
+            color: var(--secondary);
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        /* Corporate Experience Log */
+        .node-block {
+            margin-bottom: 22px;
+        }
+        .node-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .node-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .node-designation {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .node-org {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .node-date {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: var(--bg-light);
+            padding: 2px 8px;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+        }
+
+        .node-details {
+            list-style: none;
+        }
+
+        .node-details li {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 14px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .node-details li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Structured Group Containers (Sidebar) */
+        .catalogue-box {
+            margin-bottom: 18px;
+            background: var(--bg-light);
+            padding: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 2px;
+        }
+
+        .catalogue-caption {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--primary);
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #CBD5E1;
+            padding-bottom: 4px;
+        }
+
+        .catalogue-tokens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .token {
+            font-size: 11px;
+            font-weight: 500;
+            background: var(--bg-main);
+            color: var(--primary);
+            padding: 3px 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Metric Rows (Achievements) */
+        .metric-row {
+            margin-bottom: 12px;
+            border-left: 2px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .metric-header {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .metric-sub {
+            font-size: 11.5px;
+            color: var(--text-muted);
+        }
+
+        /* Academic Block */
+        .academic-node {
+            margin-bottom: 12px;
+        }
+
+        .academic-major {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .academic-inst {
+            font-size: 11.5px;
+            color: var(--text-muted);
+        }
+
+        /* Language Grid Architecture */
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .matrix-cell {
+            font-size: 12px;
+            color: var(--primary);
+            font-weight: 600;
+            background: var(--bg-light);
+            padding: 6px 10px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .matrix-cell span {
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        /* Precision Print Style Rules */
+        @media print {
+            body {
+                background: #FFFFFF;
+                color: #000000;
+            }
+            .no-print-panel {
+                display: none !important;
+            }
+            .resume-page {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .resume-page {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            .exec-header {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+            .img-frame {
+                margin: 0 auto;
+            }
+            .title-pipeline {
+                justify-content: center;
+            }
+            .contact-strip {
+                justify-content: center;
+            }
+            .layout-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print-panel">
+        <button class="btn btn-primary" onclick="window.print()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download Resume
+        </button>
+        <button class="btn" onclick="window.print()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Print
+        </button>
+    </div>
+
+    <div class="resume-page">
+        <!-- Absolute Executive Header Architecture -->
+        <header class="exec-header">
+            <div class="img-frame">
+                <img src="https://i.pinimg.com/736x/d5/c7/fa/d5c7fa4f04bd4b85a412498765883110.jpg" alt="Satyam Pandey Executive Portrait">
+            </div>
+            <div class="meta-block">
+                <h1>Satyam Pandey</h1>
+                <div class="title-pipeline">
+                    <span>Growth Marketing Specialist</span>
+                    <span>Brand Strategist</span>
+                    <span>Founder | Ofbuzz Technology</span>
+                </div>
+                <div class="contact-strip">
+                    <div class="contact-strip-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <a href="tel:+917827201014">+91 78272 01014</a>
+                    </div>
+                    <div class="contact-strip-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <a href="mailto:satyamxpandey11@gmail.com">satyamxpandey11@gmail.com</a>
+                    </div>
+                    <div class="contact-strip-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <a href="https://linkedin.com/in/satyamxpandey" target="_blank">linkedin.com/in/satyamxpandey</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Balanced Functional Matrix Grid -->
+        <div class="layout-grid">
+            
+            <!-- Left Primary Column -->
+            <div class="left-pane">
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        Executive Profile
+                    </div>
+                    <p class="editorial-summary">
+                        Accomplished Growth Marketing Specialist, Brand Strategist, and Technology Leader with over 6 years of proven capability engineering scalable consumer-acquisition frameworks and orchestrating complete digital transformation strategies[cite: 1]. Highly specialized in the jewelry e-commerce and luxury sector, combining technical foresight with brand positioning to drive consistent revenue velocity[cite: 1]. Expert developer of enterprise automation landscapes and customized software infrastructure that transforms operational output, optimizes market visibility, and drives customer conversion lifecycles across modern business ecosystems[cite: 1].
+                    </p>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        Professional Milestones & Experience
+                    </div>
+
+                    <!-- Ofbuzz -->
+                    <div class="node-block">
+                        <div class="node-meta">
+                            <div>
+                                <div class="node-designation">Founder & Growth Lead</div>
+                                <div class="node-org">Ofbuzz Technology</div>
+                            </div>
+                            <div class="node-date">2021 – Present</div>
+                        </div>
+                        <ul class="node-details">
+                            <li>Founded and scale an advanced enterprise technology firm deploying customized SaaS suites, workflow automations, AI business applications, and full-scale digital ecosystem integrations for SMEs and luxury jewelry clients[cite: 1].</li>
+                            <li>Designed and successfully commercialized complex software systems including specialized Jewelry CRMs, digital Kitty Management suites, centralized Bulk WhatsApp platforms, and robust corporate custom tools[cite: 1].</li>
+                            <li>Maintain ownership over the absolute product lifecycle, supervising UI/UX design architecture, corporate brand strategy, front-end solution blueprinting, growth strategy, and high-value lead acquisition pipelines[cite: 1].</li>
+                            <li>Direct end-to-end strategic workflows spanning enterprise-tier client communications, portfolio mapping, multi-channel growth systems, and performance analytics execution[cite: 1].</li>
+                            <li>Pioneer industry-specific digital architecture roadmaps, migrating legacy multi-generational jewelry operations into optimized modern digital setups[cite: 1].</li>
+                        </ul>
+                    </div>
+
+                    <!-- Abhushan Mandir -->
+                    <div class="node-block">
+                        <div class="node-meta">
+                            <div>
+                                <div class="node-designation">Digital Marketing Manager</div>
+                                <div class="node-org">Abhushan Mandir Jewellers</div>
+                            </div>
+                            <div class="node-date">2024 – Present</div>
+                        </div>
+                        <ul class="node-details">
+                            <li>Directed full-spectrum omnichannel growth operations, upgrading luxury market positioning indices and accelerating cross-platform client interaction rates[cite: 1].</li>
+                            <li>Supervised complex commercial production operations including product photography direction, visual layout assets, and standard creative designs for premium promotional pushes[cite: 1].</li>
+                            <li>Created high-conversion cinematic advertisement videos and structured digital layouts to expand the brand's addressable organic and paid media pipeline[cite: 1].</li>
+                        </ul>
+                    </div>
+
+                    <!-- Vachya Jewels -->
+                    <div class="node-block">
+                        <div class="node-meta">
+                            <div>
+                                <div class="node-designation">Digital Marketing Manager</div>
+                                <div class="node-org">Vachya Jewels</div>
+                            </div>
+                            <div class="node-date">2022 – 2024</div>
+                        </div>
+                        <ul class="node-details">
+                            <li>Formulated data-driven customer acquisition funnels to extend audience market penetration, digital platform visibility, and overarching brand presence[cite: 1].</li>
+                            <li>Constructed highly engaging brand creatives, dynamic marketing designs, and item imagery catalogs optimized across core digital customer touchpoints[cite: 1].</li>
+                            <li>Produced and edited targeted video media deployments, supporting consistent brand outreach objectives across active marketing loops[cite: 1].</li>
+                        </ul>
+                    </div>
+
+                    <!-- Kharidari Supermart -->
+                    <div class="node-block">
+                        <div class="node-meta">
+                            <div>
+                                <div class="node-designation">Warehouse Executive</div>
+                                <div class="node-org">Kharidari Supermart</div>
+                            </div>
+                            <div class="node-date">2020 – 2022</div>
+                        </div>
+                        <ul class="node-details">
+                            <li>Regulated inventory verification methodologies and core warehouse records management, maintaining data fidelity across all storage accounts[cite: 1].</li>
+                            <li>Coordinated facility storage optimization plans and transit pathways, increasing item selection speeds and general logistical delivery performance[cite: 1].</li>
+                        </ul>
+                    </div>
+
+                    <!-- Everycom Electronics -->
+                    <div class="node-block">
+                        <div class="node-meta">
+                            <div>
+                                <div class="node-designation">Technical Support Executive</div>
+                                <div class="node-org">Everycom Electronics</div>
+                            </div>
+                            <div class="node-date">2019 – 2020</div>
+                        </div>
+                        <ul class="node-details">
+                            <li>Deployed technical print infrastructures and custom driver provisions, diagnosing connectivity problems to protect enterprise support SLAs[cite: 1].</li>
+                            <li>Managed complex e-commerce catalog operations on Amazon, processing real-time inventory adjustments and keeping fulfillment protocols precise[cite: 1].</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar Column -->
+            <div class="right-pane">
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                        Technical Competencies
+                    </div>
+                    
+                    <div class="catalogue-box">
+                        <div class="catalogue-caption">Marketing & Scaling</div>
+                        <div class="catalogue-tokens">
+                            <span class="token">Performance Marketing</span>
+                            <span class="token">Brand Strategy</span>
+                            <span class="token">SEO Architecture</span>
+                            <span class="token">Social Media Marketing</span>
+                            <span class="token">Meta Ads Manager</span>
+                            <span class="token">Google Analytics</span>
+                            <span class="token">B2B Lead Generation</span>
+                            <span class="token">Market Research</span>
+                        </div>
+                    </div>
+
+                    <div class="catalogue-box">
+                        <div class="catalogue-caption">Creative & Production</div>
+                        <div class="catalogue-tokens">
+                            <span class="token">Graphic Design</span>
+                            <span class="token">Advanced Video Editing</span>
+                            <span class="token">Creative Direction</span>
+                            <span class="token">Product Photography</span>
+                            <span class="token">Conversion Copywriting</span>
+                            <span class="token">Campaign Scriptwriting</span>
+                        </div>
+                    </div>
+
+                    <div class="catalogue-box">
+                        <div class="catalogue-caption">Technology & Engineering</div>
+                        <div class="catalogue-tokens">
+                            <span class="token">AI Tool Automation</span>
+                            <span class="token">Website Development</span>
+                            <span class="token">WordPress Architecture</span>
+                            <span class="token">Shopify Management</span>
+                            <span class="token">CRM Engineering</span>
+                            <span class="token">API Integrations</span>
+                            <span class="token">Workflow Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="catalogue-box">
+                        <div class="catalogue-caption">Corporate Leadership</div>
+                        <div class="catalogue-tokens">
+                            <span class="token">Executive Leadership</span>
+                            <span class="token">Client Acquisition</span>
+                            <span class="token">Business Development</span>
+                            <span class="token">Strategic Negotiation</span>
+                            <span class="token">Project Management</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Measurable Impact
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Monetized 20K+ Subscriber Platform</div>
+                        <div class="metric-sub">Content Network Scaling — 2024[cite: 1]</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Generated 100+ Qualified Leads Monthly</div>
+                        <div class="metric-sub">Lead Systems Hub Ecosystem — 2023[cite: 1]</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Engineered 1000+ Brand Media Assets</div>
+                        <div class="metric-sub">High-Scale Corporate Creative Architecture — 2025[cite: 1]</div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        Credentials
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">AI Tools Workshop Integration</div>
+                        <div class="metric-sub">Be10x — 05/2026[cite: 1]</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Marketing With Canva Architecture</div>
+                        <div class="metric-sub">Canva Design School — 11/2025[cite: 1]</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Google Analytics Certification</div>
+                        <div class="metric-sub">Grow With Google — 02/2025[cite: 1]</div>
+                    </div>
+                    <div class="metric-row">
+                        <div class="metric-header">Creative Technology Endorsement</div>
+                        <div class="metric-sub">Cemex Ventures — 11/2022[cite: 1]</div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 3.5A2.5 2.5 0 0 1 6.5 6H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5v-20z"/></svg>
+                        Education
+                    </div>
+                    <div class="academic-node">
+                        <div class="academic-major">Bachelor of Arts</div>
+                        <div class="academic-inst">S.S.V.V University, Varanasi[cite: 1]</div>
+                    </div>
+                    <div class="academic-node">
+                        <div class="academic-major">High School Diploma</div>
+                        <div class="academic-inst">M.V.V. Gurukul Vidyapeeth[cite: 1]</div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.65 0 3-4.03 3-9s-1.35-9-3-9m0 18c-1.65 0-3-4.03-3-9s1.35-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg>
+                        Languages
+                    </div>
+                    <div class="matrix-grid">
+                        <div class="matrix-cell">Hindi <span>Native</span></div>
+                        <div class="matrix-cell">English <span>Fluent</span></div>
+                        <div class="matrix-cell">Sanskrit <span>Advanced</span></div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
